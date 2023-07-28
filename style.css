@@ -1,0 +1,61 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+:root{
+    word-wrap: break-word;
+    /* word-break: break-all; */
+    font-size: .9rem;
+    text-align: justify;
+    max-width: 50vw;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: rgb(26,26,26);
+    color: bisque;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#result-url{
+    color: rgb(246, 84, 101);
+}
+#result-url:visited{
+    color: rgb(163, 50, 61);
+}
+
+#result-description{
+    color: #cacaca;
+}
+
+#btn{
+    background-color: rgba(208, 56, 71, 0.258);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color:rgb(255, 227, 194);
+    border: 1px solid rgb(220, 69, 84);
+}
+#btn:hover{
+    background-color: rgb(220, 69, 84);
+    border: 1px solid rgba(208, 56, 71, 0.258);
+}
+
+#query-input{
+    background-color: rgba(255, 227, 194, 0.6);
+    border: 1px solid rgb(254, 173, 81);
+}
+#query-input:focus{
+    background-color: rgba(255, 227, 194, .8);
+}
+#query-input::placeholder{
+    color: rgba(55, 55, 55, .4);
+}
