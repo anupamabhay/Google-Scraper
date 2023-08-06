@@ -17,7 +17,12 @@
 .container{
     display: flex;
     flex-direction: column;
+    /* gap: .5rem; */
+}
+.input-group{
+    display: flex;
     gap: .5rem;
+    justify-content: space-between;
 }
 .form{
     display: flex;
@@ -52,10 +57,21 @@
 #query-input{
     background-color: rgba(255, 227, 194, 0.6);
     border: 1px solid rgb(254, 173, 81);
+    flex-grow: 3;
 }
 #query-input:focus{
     background-color: rgba(255, 227, 194, .8);
 }
 #query-input::placeholder{
-    color: rgba(55, 55, 55, .4);
+    color: rgba(55, 55, 55, .5);
+}
+#result-count{
+    background-color: rgba(255, 227, 194, 0.6);
+    border: 1px solid rgb(254, 173, 81);
+}
+#result-count:focus{
+    background-color: rgba(255, 227, 194, .8);
+}
+#result-count::placeholder{
+    color: rgba(55, 55, 55, .5);
 }
