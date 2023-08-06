@@ -1,7 +1,7 @@
 # Google-Scrapper
-* Scrapes top 5 results from google search engine using scrapingbee API.
+* Scrapes top N results from google search engine using scrapingbee API.
 * Grabs and displays the title, url and description from the response received.
-* The number of results can be changed by changing the 'nb_results' parameter.
+* Asks for the search query and the number of results that you want.
 * Change the 'api_key' parameter to your API Key before sending the request.
 <!-- To Do: Add a number type input to let the users choose how many results they want to see. The value of this input will be stored in a const variable and passed to the 'nb_results' parameter. Also, edit the "The top 5 results are:" part to dynamically changed according to the number of results. -->
 
