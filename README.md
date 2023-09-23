@@ -1,4 +1,4 @@
-# Google-Scrapper
+# Google-Scraper
 * Scrapes top N results from google search engine using scrapingbee API.
 * Grabs and displays the title, url and description from the response received.
 * Asks for the search query and the number of results that you want.
