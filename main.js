@@ -23,7 +23,7 @@ function handleSubmit(e) {
             'language': 'en',
             'nb_results': resultCountValue, //the documentation tells you to add this header to limit the number of results to be returned but even after adding nb_results: 5, the number of results keep varrying between 3-5. When I use 6, it shows anything between 4-6. It's not consistent and that's not my fault.
         }
-    }).then(function (response) {
+    }).then((response) => {
         // handle success
         const resultData = (response.data);
         const organicData = resultData.organic_results;
@@ -41,7 +41,7 @@ function handleSubmit(e) {
                 <span id="result-description">${topDesc[i]}</span> <br><br>
             `;
         }
-    }).catch(function (reject) {
+    }).catch((reject) => {
         //handle error
         console.log(reject);
     })
