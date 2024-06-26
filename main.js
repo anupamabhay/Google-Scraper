@@ -18,7 +18,7 @@ function handleSubmit(e) {
     //API Request
     axios.get('https://app.scrapingbee.com/api/v1/store/google', {
         params: {
-            'api_key': 'XXLP3MNSIF6HK3H7SC8MSGT9PTU75H0U5TPQ0L9Z219K0CAC8PVWMFECZF13JFT0M7250551BX2V43SA',
+            'api_key': 'YOUR_API_KEY',
             'search': inputValue.toString(),
             'language': 'en',
             'nb_results': resultCountValue, //the documentation tells you to add this header to limit the number of results to be returned but even after adding nb_results: 5, the number of results keep varrying between 3-5. When I use 6, it shows anything between 4-6. It's not consistent and that's not my fault.
