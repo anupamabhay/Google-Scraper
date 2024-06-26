@@ -1,77 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Caveat+Brush&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ojuju:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *, *::before, *::after{
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
 }
 :root{
     word-wrap: break-word;
-    /* word-break: break-all; */
     font-size: .9rem;
     text-align: justify;
-    max-width: 50vw;
-    padding: 1rem;
     margin: 0 auto;
-    background-color: rgb(26,26,26);
-    color: bisque;
+    background-color: rgb(1, 13, 19);
+    color: rgb(223, 223, 223);
+
+    display: flex;
+    justify-content: center;
 }
 
 .container{
+    /* border: 1px solid lightseagreen; */
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    /* gap: .5rem; */
+    gap: 2rem;
+    width: 80vw;
 }
 .input-group{
+    /* border: 1px solid rgb(230, 70, 174); */
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
     justify-content: space-between;
 }
 .form{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 }
 
-#result-url{
-    color: rgb(246, 84, 101);
-}
-#result-url:visited{
-    color: rgb(163, 50, 61);
-}
 
-#result-description{
-    color: #cacaca;
-}
 
 #btn{
-    background-color: rgba(208, 56, 71, 0.258);
+    background-color: rgb(163, 124, 32);
     border: none;
+    border-radius: 0.5rem;
+    width: 15%;
     cursor: pointer;
+    padding: 0.5rem;
     text-align: center;
-    color:rgb(255, 227, 194);
-    border: 1px solid rgb(220, 69, 84);
+    color:#e2e2e2;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 #btn:hover{
-    background-color: rgb(220, 69, 84);
-    border: 1px solid rgba(208, 56, 71, 0.258);
+    background-color: rgb(198, 151, 41);
 }
 
 #query-input{
-    background-color: rgba(255, 227, 194, 0.6);
-    border: 1px solid rgb(254, 173, 81);
-    flex-grow: 3;
+    /* border: 2px solid lime; */
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #e2e2e2;
+    padding: 0.5rem;
+    width: 70%;
 }
-#query-input:focus{
-    background-color: rgba(255, 227, 194, .8);
+#query-input:focus, #result-count:focus{
+    outline: none;
 }
 #query-input::placeholder{
-    color: rgba(55, 55, 55, .5);
+    color: rgba(75, 75, 75, 0.572);
 }
 #result-count{
-    background-color: rgba(255, 227, 194, 0.6);
-    border: 1px solid rgb(254, 173, 81);
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #e2e2e2;
+    padding: 0.5rem;
+    width: 15%;
 }
-#result-count:focus{
-    background-color: rgba(255, 227, 194, .8);
-}
+
 #result-count::placeholder{
-    color: rgba(55, 55, 55, .5);
+    color: rgba(75, 75, 75, 0.572);
+}
+
+#query-output {
+    /* border: 2px solid rgb(46, 22, 233); */
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#query-header {
+    /* border: 1px solid lime; */
+    font-weight: 500;
+}
+
+#result-header {
+    /* border: 1px solid rgb(208, 0, 255); */
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#result-item {
+    /* border: 3px solid rgb(252, 113, 82); */
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#result-title {
+    /* border: 1px solid rgb(221, 255, 0); */
+    color: rgb(242, 247, 252);
+    font-weight: 500;
+}
+
+#result-url{
+    /* border: 1px solid rgb(0, 242, 255); */
+    color: rgb(234, 184, 67);
+}
+#result-url:visited{
+    color: rgb(163, 124, 32);
+}
+
+#result-description{
+    /* border: 1px solid red; */
+    margin-top: 0.5rem;
+    color: #d6d5d5df;
 }
