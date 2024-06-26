@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Caveat+Brush&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ojuju:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -7,6 +7,7 @@
     margin: 0;
     letter-spacing: 1px;
 }
+
 :root{
     word-wrap: break-word;
     font-size: .9rem;
@@ -20,26 +21,24 @@
 }
 
 .container{
-    /* border: 1px solid lightseagreen; */
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 80vw;
 }
+
 .input-group{
-    /* border: 1px solid rgb(230, 70, 174); */
     display: flex;
     gap: 1rem;
     justify-content: space-between;
 }
+
 .form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
-
 
 #btn{
     background-color: rgb(163, 124, 32);
@@ -58,7 +57,6 @@
 }
 
 #query-input{
-    /* border: 2px solid lime; */
     border: none;
     border-radius: 0.5rem;
     background-color: #e2e2e2;
@@ -71,6 +69,7 @@
 #query-input::placeholder{
     color: rgba(75, 75, 75, 0.572);
 }
+
 #result-count{
     border: none;
     border-radius: 0.5rem;
@@ -78,13 +77,11 @@
     padding: 0.5rem;
     width: 15%;
 }
-
 #result-count::placeholder{
     color: rgba(75, 75, 75, 0.572);
 }
 
 #query-output {
-    /* border: 2px solid rgb(46, 22, 233); */
     font-weight: 400;
 
     display: flex;
@@ -93,33 +90,27 @@
 }
 
 #query-header {
-    /* border: 1px solid lime; */
     font-weight: 500;
 }
 
 #result-header {
-    /* border: 1px solid rgb(208, 0, 255); */
     text-transform: uppercase;
-    /* text-decoration: underline; */
     text-align: center;
     font-size: 1.2rem;
 }
 
 #result-item {
-    /* border: 3px solid rgb(252, 113, 82); */
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
 
 #result-title {
-    /* border: 1px solid rgb(221, 255, 0); */
     color: rgb(242, 247, 252);
     font-weight: 500;
 }
 
 #result-url{
-    /* border: 1px solid rgb(0, 242, 255); */
     color: rgb(234, 184, 67);
 }
 #result-url:visited{
@@ -127,7 +118,6 @@
 }
 
 #result-description{
-    /* border: 1px solid red; */
     margin-top: 0.5rem;
     color: #d6d5d5df;
 }
