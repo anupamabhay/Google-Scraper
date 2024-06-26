@@ -6,4 +6,4 @@
 <!-- To Do: Add a number type input to let the users choose how many results they want to see. The value of this input will be stored in a const variable and passed to the 'nb_results' parameter. Also, edit the "The top 5 results are:" part to dynamically changed according to the number of results. -->
 
 # Output
-![scrapper_ss](https://github.com/anupamabhay/Google-Scrapper/assets/24754580/f397df74-a173-4336-9987-a59198d8b423)
+![scraper](https://github.com/anupamabhay/Google-Scraper/assets/24754580/c66467c8-ec19-4dc7-ba89-fd4d9b4b2f49)
